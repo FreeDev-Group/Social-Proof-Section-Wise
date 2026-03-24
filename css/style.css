@@ -1,0 +1,176 @@
+:root {
+  --very-dark-magenta: #502050; /* La partie que j'ai beaucoup aimée */
+  --soft-pink: #ee68a4;
+  --dark-grayish-magenta: #937b92;
+  --light-grayish-magenta: #f7f2f7;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+}
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4.5rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.intro {
+  max-width: 450px;
+}
+
+.intro h1 {
+  color: var(--very-dark-magenta);
+  font-size: 3.5rem;
+  line-height: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.intro p {
+  color: var(--dark-grayish-magenta);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+
+.ratings-container {
+  list-style: none;
+  width: 100%;
+  max-width: 540px;
+}
+
+.rating-card {
+  background-color: var(--light-grayish-magenta);
+  padding: 1.25rem 2rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.rating-card .stars {
+  color: #f1ad50; 
+  letter-spacing: 2px;
+}
+
+.rating-card p {
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+}
+
+
+.rating-card:nth-child(2) { margin-left: 3rem; }
+.rating-card:nth-child(3) { margin-left: 6rem; }
+
+
+.testimonials-container {
+  display: flex;
+  gap: 2rem;
+  height: 300px; 
+}
+
+.testimonial {
+  background-color: var(--very-dark-magenta);
+  color: var(--white);
+  padding: 2.5rem;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.user-info img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.user-info h2 {
+  font-size: 1rem;
+}
+
+.status {
+  color: var(--soft-pink);
+  margin-top: 0.2rem;
+}
+
+.quote {
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.testimonial:nth-child(2) { margin-top: 1rem; }
+.testimonial:nth-child(3) { margin-top: 2rem; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 2rem 0 1rem; 
+  width: 100%;
+  color: var(--very-dark-magenta);
+}
+
+.attribution a {
+  color: var(--soft-pink);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/* Ceci va me permettre de le lire mon code sur le mobile */
+@media (max-width: 900px) {
+  .attribution {
+    margin-top: 3rem;
+  }
+}
+/* Pour le design mobile, ça je kiff trop */
+@media (max-width: 900px) {
+  .top-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .rating-card {
+    flex-direction: column;
+    margin-left: 0 !important;
+    gap: 0.5rem;
+  }
+
+  .testimonials-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .testimonial {
+    margin-top: 0 !important;
+  }
+}
