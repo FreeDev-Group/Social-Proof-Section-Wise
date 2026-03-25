@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://www.frontendmentor.io/solutions/social-proof-section-wise-Hql9Ftlb1R)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/social-proof-section-v2ZyZc7Kys)
 - Live Site URL: [click here](https://freedev-group.github.io/Social-Proof-Section-Wise/)
 
 ## My process
