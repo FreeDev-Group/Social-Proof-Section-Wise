@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]
-- Live Site URL: [Add live site URL here]
+- Solution URL: [Add solution URL here]()
+- Live Site URL: [Add live site URL here]()
 
 ## My process
 
@@ -76,7 +76,6 @@ In future projects, I want to further explore:
 
 I collaborated with an AI assistant (**Antigravity**) to:
 - Analyze my technical choices (Flexbox vs Grid).
-- Formulate my learnings about the "staggered" layout.
 - Verify the semantics of my HTML code.
 
 ## Author
